@@ -1,0 +1,97 @@
+/*comments outlining intention */
+body{
+	/*default font 16px*/
+	font-family: ; 
+	color: black; 
+	background-color: rgb(220, 236, 248);
+	font-family: Palatino, Times New Roman, serif;  
+}
+
+#header {
+	font-size: 1.75em; 
+	position: relative;
+	left: 100px; 
+}
+#intro{
+	margin: 4px;
+	position: relative; top: -15px; left:50px;
+}
+.let a{
+	/*automatic spacing between spans too big. shrink margin. Might shrink other spaceing*/
+	color: green;
+	margin: -3px; 
+	font-size: .500em; 
+}
+.alt a{
+	/*Alternate teh colors of the links. Works because lower on the doc?*/
+	color: blue;}
+
+
+
+#sidebar{
+	/*short description to the left
+	Relative positioning easier than absolute; tied to element above it!
+	Allow for two content sections int he middle of the page with inline-block*/
+	position: relative; 
+	width: 150px; 
+	float: left; 
+	font-family: Arial Rounded MT Bold, Arial, sans-serif; 
+	text-align: center; 
+	display: inline-block;
+}
+#sidebar img{
+	margin-bottom: 20px; 
+}
+
+.caption {
+	/*Use margin spacing to position text rather than top val*/
+	position: absolute;
+	z-index: 1; 
+	font-size: .850em; 
+	font-family: Perpetua, Times New Roman, serif;
+	left: 25px; 
+	margin-top: 133px; 
+	font-weight: bold; 
+
+}
+
+.caption a{
+	color:white;
+}
+
+#cont_right{
+	float: right; 
+	font-family: Arial Rounded MT Bold, Arial, sans-serif; 
+	display: inline-block;
+	color: rgb(30, 75, 42); 
+	width: 750px;
+	height: 600px;
+	position: relative;
+	top: 100px;
+}
+#cont_right p{
+	text-align: center; 
+}
+
+#footer{
+	font-size: 1.4em; 
+	position: relative;
+	height:60px;
+	padding-top: 1px;
+	background-color: white; 
+	top:35px;
+	border: solid blue; 
+	clear: right;
+
+}
+
+#footer a:hover{color:white;}
+
+
+a:link{text-decoration: none;
+		color:black;}
+a:hover{color:grey;}
+a:active{color:red;}
+
+li:first-child{color:red;}
+li:last-child{color:grey;}
