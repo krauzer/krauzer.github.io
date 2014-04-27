@@ -10,11 +10,12 @@ body{
 #header {
 	font-size: 1.75em; 
 	position: relative;
-	left: 100px; 
+	padding-left: 100px; 
 }
 #intro{
 	margin: 4px;
-	position: relative; top: -15px; left:50px;
+	position: relative; top: -15px; 
+	padding-left:50px;
 }
 .let a{
 	/*automatic spacing between spans too big. shrink margin. Might shrink other spaceing*/

@@ -1,0 +1,74 @@
+/*CSS for blog pages: Technical1, Cultural1*/
+/*font sized at 16*/
+body{
+	font-family: Baskerville, Times New Roman, serif;
+	background-color: #DDDDDD;  
+}
+
+a {text-decoration: none}
+a:link {color:black;}
+a:visited {color:black;}
+a:hover {color:#868686;}
+
+#header{
+	font-family: Arial Rounded MT Bold, Arial, sans-serif;
+	font-size: 1.5em; 
+	padding-left: 20px; 
+	margin-bottom: 75px;
+	margin-top:20px;
+}
+
+#sub_header{
+font-size: .6em; 
+font-family: Baskerville, Times New Roman, serif;
+padding-left: 75px; 
+font-weight: 600; 
+}
+
+#content{
+	width:75%;
+	margin-left: 50px; 
+}
+
+#content_title{
+	padding: 5px; 
+	font-size: 1.25em; 
+
+
+}
+#date{
+	font-size: .75em; 
+	float: right; 
+	font-weight: bold; 
+}
+
+#content_objectives{
+	padding-left: 20px;
+	width: 75%; 
+}
+#content_text{
+	text-align: center; 
+}
+
+h5{
+	margin: 20px 0px 5px 0px;
+	text-align: left; 
+}
+#content_text p{
+	margin:10px 0px 10px 0px; 
+	text-align: left; 
+
+}
+
+#footer{
+	height: 30px;
+	text-align: center; 
+	margin-top: 5px; 
+
+}
+
+
+/*Temporary*/
+#links{
+	margin-top: 40px; 
+}
