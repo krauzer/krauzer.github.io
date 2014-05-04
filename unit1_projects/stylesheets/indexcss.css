@@ -1,0 +1,265 @@
+/*CSS for main page*/
+/*font sized at 16*/
+body{
+	font-family: Baskerville, Times New Roman, serif;
+	background-color: white;  
+}
+a{text-decoration: none;}
+a:link {color:black;}
+a:visited {color:black;}
+a:hover {color:#868686;}
+
+header{
+	font-family: Arial Rounded MT Bold, Arial, sans-serif;
+	font-size: 1.5em; 
+	padding-left: 25px; 
+	margin-bottom: 75px;
+	margin-top:20px;
+	z-index: 2; 
+	position: relative;
+}
+
+nav{
+font-size: .6em; 
+font-family: Baskerville, Times New Roman, serif;
+padding-left: 75px; 
+font-weight: 600; 
+}
+nav a:first-child{
+	line-height: 20px; 
+}
+
+#core_wrapper{
+	width: 100%
+}
+/*Section blob colored with CSS*/
+section{
+	width: 30%;
+	height: 197px; 
+	background-color: white; 
+	border-top: 4px solid black; 
+	border-right: 4px solid black; 
+	border-left: 4px solid black; 
+	border-radius: 5% 5% 0 0; 
+	margin: auto;  
+	/*box-shadow: inset 0 0 2em grey; */
+	z-index: 2; 
+	position: relative;
+
+}
+section span{
+	position: relative;
+	top: 10px;
+	margin-left: 5px; 
+	display: block; 
+}
+
+
+/*CSS drawings*/
+
+
+
+#left_slide {
+position: absolute;
+border-bottom: 4px solid black; 
+width: 50%; 
+height: 350px;
+top:0;
+background-color: #DDDDDD; 
+}
+
+#right_slide {
+position: absolute; 
+width: 50%;
+height: 350px; 
+right: 0; 
+top: 0; 
+border-bottom: 4px solid black; 
+background-color: #DDDDDD; 
+}
+
+footer{
+	height: 30px;
+	text-align: center; 
+	margin-top: 15em; 
+	position: relative;
+	z-index: 2; 
+
+}
+
+
+/*Window Pane Design and Execution*/
+
+/*Links within panes*/
+#pane_one a{
+	position: absolute;
+	z-index: 3; 
+}
+
+#pane_one a:hover{
+	color:green;
+}
+
+#ruby_link{
+	font-family: 'Patrick Hand', cursive; 
+	font-size: 1.25em; 
+	color:rgb(255, 87, 87);
+	font-weight: bolder;
+	top:100px;
+	left:50px;
+}
+#js_link{
+	font-family: 'PT Serif', serif; 
+	font-size: 1.25em;
+	color: rgb(109, 153, 109); 
+	top:10px;
+	left:100px;
+}
+
+#design_link{
+	font-family: 'Rokkitt', serif; 
+	font-size: 1.25em; 
+	font-weight: bold; 
+	color: rgb(162, 117, 117);
+	top: 50px; 
+	left:160px;
+}
+
+
+/*Pane Construction*/
+.pane{
+	border: 3px solid black; 
+	position: relative;
+	box-shadow: inset 0 0 4px; 
+	background-color: rgb(224, 248, 255);
+}
+
+#pane_one{
+width:80%;
+height:70%;
+margin-left:9%;
+}
+
+#pane_two{display:none;}
+
+#pane_three{display:none;}
+
+#pane_four{display: none;}
+
+/*Tablet view: 4 panes*/
+
+@media screen and (max-width: 960px){
+
+	.pane{
+		border: 2px solid black; 
+		height:35%;
+		width: 40%;
+		position: relative;
+		box-shadow: inset 0 0 4px; 
+		display: inline-block;
+		margin:1%;
+		
+	}
+
+	#pane_one{
+		margin-left: 7%; 
+		height: 35%; 
+		width: 40%; 
+	}
+
+	#pane_one #design_link{
+		display: none; 
+	}
+
+
+	#pane_two{
+		display: inline-block;
+	}
+		
+	#pane_three{
+		margin-left: 7%; 
+		display: inline-block;
+	}
+
+	#pane_four{	
+		display: inline-block;
+	}
+
+
+	#ruby_link{
+		top: ;
+		left: 0px ;
+	}
+
+	#js_link{
+		top:10px;
+		left:20px ;
+	}
+
+	#design_link{
+		position: absolute;
+		top: 14px;
+		left: 3px;
+	}
+}
+
+/*Mobile View: Door*/
+@media screen and (max-width: 480px){
+.pane{
+	border: 4px solid black; 
+	height:25%;
+	width: 20%;
+	position: absolute;
+	box-shadow: inset 0 0 4px; 
+	background-color: rgba(150, 75, 0, 0.25);  
+}
+
+.knob{
+	width: 9px;
+	height: 9px;
+	box-shadow: inset 0 0 1em; 
+	border: 4px solid black;
+	border-radius: 100%; 
+	left:105px;
+	top:92px;
+	position: absolute;
+}
+#pane_one{
+	left:14px;
+	top:35px;
+	width: 20%; 
+	height: 25%; 
+}
+#pane_two{
+	left:70px;
+	top:35px;
+	display: inline-block;
+}
+#pane_three{
+	left:14px;
+	top:110px;
+	display: inline-block;
+}
+
+#pane_four{
+	left:70px;
+	top:110px;
+	display: inline-block;
+
+}
+	#ruby_link{
+		top: 170px;
+		left: 20px;
+	}
+
+	#js_link{
+		top: 205px;
+		left: 22px;
+	}
+
+	#design_link{
+		top: 160px;
+		left: -30px;
+	}
+
+}
