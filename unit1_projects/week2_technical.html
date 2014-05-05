@@ -1,0 +1,74 @@
+<!--Template for Blog-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Technical Blog: Class vs. Id</title>
+	<link rel="stylesheet" type="text/css" href="stylesheets/dbcblog_styling.css">
+</head>
+<body>
+	<div id="header">Dylan Krause: Technical Blog
+		<div id="sub_header">
+			<a href="http://krauzer.github.io">Main</a><br>
+			<a href="week1_cultural_blog.html">Cultural Blog</a>
+		</div>
+	</div>
+	<!--Wrap content to center it on page-->
+	<div id="wrapper">
+		<div id="content">
+			<!--Content center-left-->
+			<div id="content_title">
+			 Classes and Ids<span id="date">May 4, 2014</span>
+			</div>
+			<div id="content_objectives">
+				Best Practices for Classes and Ids  
+			</div>
+			<div id="content_text">
+				<p>
+					Both the class and id attributes are deceptively simple. They are among the easiest aspects of HTML and CSS to implement, and their self-explanatory names make them approachable to even the most frustrated learner. But they are logically embedded into the structure of HTML as much as any other component, and only a good understanding of this logic behind them will allow for optimal utilization. 
+				</p>
+				<p>
+					To understand Classes and Ids, you must first picture the Document Object Model. You don't need to know the inner workings of the DOM, but you should understand that every element is an object within the Document Object Model, a node on a tree. More specifically, every element is an <em>HTMLElement object</em>. Think of an HTMLElements like people on a family tree, their own unique individuals, but connected in a hierarchal fashion. 
+				</p>
+				<p>
+					Every HTMLElement object can have <em>properties</em>. A property like a name. And, for simplicity's sake, HTML attributes are just properties by a different name. They are HTTP attributes that are just repurposed when defined in connection to an HTML object so that they can fit nicely into the property definition.  
+				</p>
+				<p>
+					So <em>Ids</em> and <em>Classes</em> are properties. But what's the difference then, you ask? As you probably know, and ID is unique. It is a key. It is an identifier. It is good practice, and commonly understood, to exist singularly. An object can only have <strong>one</strong> Id and that Id only exists for that object. If you read otherwise, read until you fully understand what they're saying, but until then take what I say as truth! 
+				</p>
+				<p>
+					But what about the class? You've read about them. An element can have more then one class. How does they gritty HTMLElement object sort this out differently than an ID? First off, an HTMLELement actually does not have a property called class, it has one called <em>classList</em>. This is, listen closely now, a read-only list of space separated class names. If you know any basic coding, it is like an array. That is how you can fit so many class names into one property. This is why they can be put on numerous elements. There is room for the infinite in the list. And they are just common words, not keys.
+				</p>
+				<p>
+					So knowing that, you can get into the best practices when it comes to using them. Think about how they fit into the HTMLElement before you start sticking them on everything. This will go a long way towards tackling common sense problems. Like, maybe you're wondering if an element can have a class and an id. What about multiple classes and an id? Of course! Think about it. They exist as different properties. They don't tangle up. The answer reveals itself. 
+				</p>
+				<p>
+					But once you start working them, it's important to realize some things. First, they are <em>namers</em> more than anything else. They don't do anything to your elements by default. They allow <em>you</em> to do things to your elements. So use them when you want better control over your elements. They allow for easier selection. 
+				</p>
+				<p>
+					Second, don't use them just to use them. The thing you learn about CSS is that simplicity makes things easier. Classes and ids make things easier. Using classes and ids simply and only when there is need makes things easier! Too many classes or too many ids makes everything bulky. If want to place the same style across multiple elements, stick it on their class rather than any id. You then only write it out once in your CSS file. 
+				</p>
+				<p>
+					Third, ids actually also allow for some special things, like liking to a particular part of a page via an href attribute. Again, if you think about this, it can only apply to ids. Both ids and classes are <em>namers</em>, and you can't move to multiple places on a page if multiple elements have the same class, so only ids are capable giving you want you want.  
+				</p>
+				<p>
+					Fourth, be specific as possibly when naming them. They are <em>namers</em>. They are identifiers. Not descriptors. Think about it. 
+				</p>
+				<p>
+					Last but not least, distinguishing between classes and ids is important when it comes to determining CSS specificity with regard to styling. Simply put, ids are more specific then classes. When marking the styling of an element with a class and an id, the id styling will win out, even if the class styling is further down the CSS page, even if you're specifying by a zillion classes and just one id. So when it comes to styling and you're working with classes and ids, be as specific as it makes sense to be. Utilize the ids if you have them. I like to think of it like this. I style based on classes for the foundation, and the unique alterations are made via their ids. 
+				</p>
+				<br>
+			</div>
+			<div>
+
+			</div>
+		</div>
+		<div id="sidebar">
+			<!--Sidebar right-->
+		</div>
+		<div id="footer">
+			<!--Footer bottom-->
+			DBC Red-Spotted Newts ~ contact <a href="mailto:dykrause@gmail.com">me</a>
+		</div>
+	</div>
+</body>
+</html>
