@@ -5,6 +5,11 @@ body{
 	background-color: #DDDDDD;  
 }
 
+ul, ol{
+	list-style: none; 
+	text-align: left;
+}
+
 a {text-decoration: none}
 a:link {color:black;}
 a:visited {color:black;}
@@ -64,7 +69,11 @@ font-weight: 600;
 	text-align: center;
 	width: 90%;  
 	margin-left: 50px;
-	line-height: 1.5em; 
+	line-height: 1.25em; 
+
+}
+
+# content_text ul li{
 }
 
 h5{
