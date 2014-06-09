@@ -1,4 +1,4 @@
-/*CSS for blog pages: Technical1, Cultural1*/
+/*CSS for blog pages: Technical1, Cultural*/
 /*font sized at 16*/
 body{
 	font-family: Baskerville, Times New Roman, serif;
@@ -73,16 +73,23 @@ font-weight: 600;
 
 }
 
-# content_text ul li{
-}
+
 
 h5{
 	margin: 20px 0px 5px 0px;
 	text-align: left; 
 }
+
 #content_text p{
 	margin:15px 0px 15px 0px; 
 	text-align: justify; 
+
+}
+
+.sql{ 
+	border: 2px solid #F5F5F5;
+	font-family: Monaco, monospace; 
+	font-size: .825em; 
 
 }
 
