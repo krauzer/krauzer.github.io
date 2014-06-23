@@ -1,0 +1,106 @@
+/*CSS for Cheat sheet
+/*font sized at 16*/
+body{
+	font-family: Baskerville, Times New Roman, serif;
+	background-color: #DDDDDD;  
+}
+
+ul, ol{
+	list-style: none; 
+	text-align: left;
+}
+
+a {text-decoration: none}
+a:link {color:black;}
+a:visited {color:black;}
+a:hover {color:#868686;}
+
+#header{
+	font-family: Arial Rounded MT Bold, Arial, sans-serif;
+	font-size: 1.5em; 
+	padding-left: 20px; 
+	margin-bottom: 75px;
+	margin-top:20px;
+}
+
+#sub_header{
+font-size: .6em; 
+font-family: Baskerville, Times New Roman, serif;
+padding-left: 75px; 
+font-weight: 600; 
+}
+
+#nav {
+	margin:25px;
+	font-family: Franklin Gothic Medium, sans-serif; 
+	margin-left: 50px;
+}
+
+#next {
+	margin-left: 37.5%;
+}
+
+#prev {
+	margin-right: 37.5%;
+}
+
+#content{
+	width:75%;
+	margin-left: 50px; 
+}
+
+#content_title{
+	padding: 5px; 
+	font-size: 1.25em; 
+
+
+}
+#date{
+	font-size: .75em; 
+	float: right; 
+	font-weight: bold; 
+}
+
+#content_objectives{
+	padding-left: 20px;
+	width: 75%; 
+}
+#content_text{
+	text-align: center;
+	width: 90%;  
+	margin-left: 50px;
+	line-height: 1.25em; 
+
+}
+
+
+
+h5{
+	margin: 20px 0px 5px 0px;
+	text-align: left; 
+}
+
+#content_text p{
+	margin:15px 0px 15px 0px; 
+	text-align: justify; 
+
+}
+
+.sql{ 
+	border: 2px solid #F5F5F5;
+	font-family: Monaco, monospace; 
+	font-size: .825em; 
+
+}
+
+#footer{
+	height: 30px;
+	text-align: center; 
+	margin-top: 5px; 
+
+}
+
+.value{
+	padding: 0px 30px;
+}
+
